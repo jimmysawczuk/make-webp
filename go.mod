@@ -1,6 +1,6 @@
 module make-webp
 
-go 1.25
+go 1.25.0
 
 require (
 	github.com/disintegration/imaging v1.6.2
@@ -17,5 +17,5 @@ require (
 	github.com/pierrec/lz4 v2.6.1+incompatible // indirect
 	github.com/ulikunitz/xz v0.5.10 // indirect
 	github.com/xi2/xz v0.0.0-20171230120015-48954b6210f8 // indirect
-	golang.org/x/image v0.30.0 // indirect
+	golang.org/x/image v0.44.0 // indirect
 )
