@@ -15,7 +15,7 @@ import (
 	_ "image/jpeg"
 	_ "image/png"
 
-	"github.com/disintegration/imaging"
+	"github.com/kovidgoyal/imaging"
 	"github.com/nickalie/go-webpbin"
 )
 
@@ -117,7 +117,7 @@ func processImage(path string) (string, error) {
 	}
 
 	if err := webpbin.
-		NewCWebP(webpbin.SetSkipDownload(true), webpbin.SetVendorPath(cwebpPath)).
+		NewCWebP(webpbin.SetVendorPath(cwebpPath)).
 		Quality(quality).
 		InputImage(img).
 		Output(wr).
